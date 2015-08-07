@@ -1,0 +1,43 @@
+https://gsnedders.html5.org/outliner/
+
+构成页面标题元素h1-h6，是HTML5之前文档大纲的全部元素
+
+HTML5提供了四个分块内容(sectioning content)---article/aside/nav/section，这些元素将文档划分为不同的区块，定义了h1-h6，
+也就意味着每个分块元素都有它在家的h1-h6层次结构。
+
+常规页面的语义都是非常相似的，与布局无关。从页面顶端向下的顺序，将依次讲解用header/nav/article/section/aside/footer定义
+页面的结构。
+
+header里面不能嵌套使用header和footer
+footer当中也不能嵌套使用header
+address元素中也不能嵌套使用header
+
+下面是header的用法代码：
+<body>
+  <header role="banner">
+    ...[网站标识，导航等]...
+  </header>
+
+  <article>
+    <header>
+      <h1>一级标题</h1>
+      <nav>
+        <ul>
+          <li><a href=""> this is a link</a></li>
+          <li><a href=""> this is a link</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+  </article>
+</body>
+
+创建页眉的步骤：
+1.<header>
+2.输入页眉内容
+3.</header>
+
+将一组连接指定为重要导航
+1.<nav>
+2.输入一组连接并且将其标记为ul(无序列表)、ol(有序列表)
+3.</nav>
