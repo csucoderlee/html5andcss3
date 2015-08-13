@@ -1,0 +1,30 @@
+css中的盒模型分为block类型和inline类型
+div默认就是block类型、span默认就是inline类型
+具体的表现就是div元素所代表的block类型的元素的宽度会占满整个浏览器
+span元素所代表的inline类型的元素的宽度只是该元素内容的宽度
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<style>
+div {
+  background-color: red;
+}
+span {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+<div>div元素</div>
+<div>div元素</div>
+<span>span元素</span>
+<span>span元素</span>
+
+</body>
+
+按上上面的例子，一行当中不允许有多个block类型的元素，而可以有多个inline类型元素，但也不是绝对，在css2.1之前可以使用float
+或者position
+css2.1推出inline-block属性，使得可以并显示多个block类型的元素
