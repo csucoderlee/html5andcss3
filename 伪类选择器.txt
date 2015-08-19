@@ -1,0 +1,12 @@
+在CSS中，可以定义类选择器把相同的元素定义为不同的样式，例如对同一个p元素定义不同的对齐样式，可以如下声明：
+<p class="right"></p>
+<p class="left"></p>
+
+p .right{text-align: right}
+p .left{text-align: left}
+
+而伪类选择器是CSS中已经定义好的选择器，不能随意取名，我们常用的伪类选择器是使用在a元素上的几种选择器
+a:link{color: red}
+a:visited{color: yellow}
+a:hover{color: green}
+a:active{color: black}
